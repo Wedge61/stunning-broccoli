@@ -1,0 +1,145 @@
+/* General setup */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0 20px;
+  min-width: 980px;
+  max-width: 1400px;
+}
+
+/* Layout */
+
+main {
+  display: grid;
+  grid-template-columns: 5fr 2fr 2fr;
+  gap: 40px;
+  padding: 20px 0;
+}
+
+/* header and footer */
+
+header {
+  border-bottom: 5px solid #aa6666;
+}
+
+footer {
+  border-top: 5px solid #aa6666;
+}
+
+footer p {
+  text-align: center;
+}
+
+/* =====================
+   Typography
+===================== */
+
+body {
+  font-family: 'Merriweather', serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+}
+
+h1, h2 {
+  font-family: 'Roboto Slab', serif;
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0;
+}
+
+section h2 + p {
+  text-indent: 2rem;
+}
+
+/* =====================
+   Links
+===================== */
+
+a {
+  color: #aa6666;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #884444;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: #cc4444;
+}
+
+a:focus {
+  outline: none;
+}
+
+a[href^="http"]::after {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-left: 5px;
+  background: url("external-link-52.png") no-repeat center;
+  background-size: contain;
+}
+
+/* =====================
+   Lists
+===================== */
+
+ul, ol {
+  margin: 1rem 0;
+  line-height: 1.6;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+section ul {
+  list-style-type: square;
+}
+
+/* =====================
+   Navigation
+===================== */
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+nav li {
+  margin-bottom: 10px;
+}
+
+nav a {
+  display: block;
+  padding: 15px;
+  background-color: #aa6666;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  text-transform: uppercase;
+}
+
+nav a:hover,
+nav a:focus {
+  background-color: #884444;
+}
