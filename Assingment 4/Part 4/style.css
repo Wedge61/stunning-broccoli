@@ -10,6 +10,14 @@ h1 {
   color: white;
 }
 
+p {
+  position: absolute;
+  margin: 0;
+  top: 35px;
+  right: 5px;
+  color: #aaaaaa;
+}
+
 canvas {
   display: block;
 }
