@@ -1,0 +1,86 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+  color: #222;
+  margin: 0;
+}
+
+/* Header */
+header {
+  background: #6b6b6b;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Layout */
+main {
+  display: flex;
+  padding: 20px;
+}
+
+article {
+  background: white;
+  padding: 20px;
+  flex: 3;
+}
+
+aside {
+  background: white;
+  padding: 20px;
+  flex: 1;
+  margin-left: 20px;
+}
+
+/* Image */
+img {
+  max-width: 100%;
+}
+
+/* Hidden label */
+.visually-hidden {
+  position: absolute;
+  left: -9999px;
+}
+
+/* Forms */
+.form-group {
+  margin-bottom: 10px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 5px;
+}
+
+/* Table */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #999;
+  padding: 8px;
+}
+
+/* Button */
+button {
+  padding: 6px 10px;
+  cursor: pointer;
+}

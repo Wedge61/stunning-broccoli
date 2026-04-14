@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>All About Bears</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>All About Bears</h1>
+
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Bears</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <form>
+    <label for="search" class="visually-hidden">Search the site</label>
+    <input type="text" id="search" placeholder="Search...">
+    <button type="submit">Go</button>
+  </form>
+</header>
+
+<main>
+
+  <article>
+    <h2>Bear facts</h2>
+    <p>Bears are large mammals found across the world.</p>
+
+    <!--IMAGE -->
+    <img src="bear.jpeg" 
+         alt="Brown bear standing in water catching fish">
+
+    <h3>Types of bears</h3>
+    <ul>
+      <li>Grizzly bears</li>
+      <li>Polar bears</li>
+      <li>Panda bears</li>
+    </ul>
+
+    <h3>Bear sounds</h3>
+
+    <audio controls>
+      <source src="bear.mp3" type="audio/mpeg">
+      <p>Your browser does not support audio. 
+      <a href="bear.mp3">Download the audio</a>.</p>
+    </audio>
+
+    <p><strong>Transcript:</strong> This audio contains bear growling sounds.</p>
+
+  </article>
+
+  <aside>
+
+    <section>
+      <h2>Comments</h2>
+      <button id="toggleComments">Show comments</button>
+
+      <div id="comments" hidden>
+        <form>
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input id="name" type="text">
+          </div>
+
+          <div class="form-group">
+            <label for="comment">Comment:</label>
+            <textarea id="comment"></textarea>
+          </div>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <section>
+      <h2>Bear Data</h2>
+
+      <table>
+        <caption>Bear size and weight comparison</caption>
+
+        <thead>
+          <tr>
+            <th scope="col">Type</th>
+            <th scope="col">Weight</th>
+            <th scope="col">Height</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <th scope="row">Grizzly</th>
+            <td>600 lbs</td>
+            <td>2.5 m</td>
+          </tr>
+          <tr>
+            <th scope="row">Polar</th>
+            <td>1000 lbs</td>
+            <td>3 m</td>
+          </tr>
+        </tbody>
+
+      </table>
+    </section>
+
+  </aside>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
